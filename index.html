@@ -1,354 +1,347 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="utf-8" />
-    
-    <!-- Einbindung Google-Font "Roboto" -->
-    <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Condensed:400,700" rel="stylesheet">
+  <meta charset="utf-8" />
 
-    <style>
-        @import url('https://fonts.googleapis.com/css?family=Encode+Sans+Condensed:400,700');
-    </style>
+  <!-- Einbindung Style-Sheets -->
+  <link rel="stylesheet" href="css/reset.min.css" />
+  <link rel="stylesheet" href="css/style.min.css" />
 
-    <!-- Einbindung Google Material Icon Font -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-    <!-- Einbindung Style-Sheets -->
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="style.css" />
-    
-    <title>Curriculum Vitae — Max Mustermann</title>
+  <title>Curriculum Vitae — Max Mustermann</title>
 </head>
+
 <body>
-    
-    <script type="text/javascript">
-        var ausgeblendetC = true;    
-        var ausgeblendetG = true;    
-        var ausgeblendetH = true;    
-        var ausgeblendetT = true;    
 
-        function Gymnasium() {
-            if (ausgeblendetG === true) {
-                document.getElementById('Gymnasium').className += ' MLAGymnasium';
+  <script type="text/javascript">
+    var ausgeblendetC = true;
+    var ausgeblendetG = true;
+    var ausgeblendetH = true;
+    var ausgeblendetT = true;
 
-                ausgeblendetG = false;
+    function Gymnasium() {
+      if (ausgeblendetG === true) {
+        document.getElementById('Gymnasium').className += ' MLAGymnasium';
 
-            } else if (ausgeblendetG === false) {
+        ausgeblendetG = false;
 
-                document.getElementById('Gymnasium').className += 'MediumLinks';
+      } else if (ausgeblendetG === false) {
 
-                ausgeblendetG = true; 
-            }
-        }
+        document.getElementById('Gymnasium').className += 'MediumLinks';
 
-        function Hochschule() {
-            if (ausgeblendetH === true) {
-                document.getElementById('Hochschule').className += ' MLAHochschule';
+        ausgeblendetG = true;
+      }
+    }
 
-                ausgeblendetH = false;
+    function Hochschule() {
+      if (ausgeblendetH === true) {
+        document.getElementById('Hochschule').className += ' MLAHochschule';
 
-            } else if (ausgeblendetH === false) {
+        ausgeblendetH = false;
 
-                document.getElementById('Hochschule').className += 'MediumLinks';
+      } else if (ausgeblendetH === false) {
 
-                ausgeblendetH = true; 
-            }
-        }
+        document.getElementById('Hochschule').className += 'MediumLinks';
 
-        function China() {
-            if (ausgeblendetC === true) {
-                document.getElementById('China').className += ' MRAChina';
+        ausgeblendetH = true;
+      }
+    }
 
-                ausgeblendetC = false;
+    function China() {
+      if (ausgeblendetC === true) {
+        document.getElementById('China').className += ' MRAChina';
 
-            } else if (ausgeblendetC === false) {
-                document.getElementById('China').className += 'MediumRechts';
+        ausgeblendetC = false;
 
-                ausgeblendetC = true; 
-            }
-        }
+      } else if (ausgeblendetC === false) {
+        document.getElementById('China').className += 'MediumRechts';
 
-        function Thailand() {
-            if (ausgeblendetT === true) {
-                document.getElementById('Thailand').className += ' MRAThailand';
+        ausgeblendetC = true;
+      }
+    }
 
-                ausgeblendetT = false;
+    function Thailand() {
+      if (ausgeblendetT === true) {
+        document.getElementById('Thailand').className += ' MRAThailand';
 
-            } else if (ausgeblendetT === false) {
-                document.getElementById('Thailand').className += 'MediumRechts';
+        ausgeblendetT = false;
 
-                ausgeblendetT = true; 
-            }
-        }
-		
-		function Engagement() {
-            if (ausgeblendetT === true) {
-                document.getElementById('Engagement').className += ' MRAEngagement';
+      } else if (ausgeblendetT === false) {
+        document.getElementById('Thailand').className += 'MediumRechts';
 
-                ausgeblendetT = false;
+        ausgeblendetT = true;
+      }
+    }
 
-            } else if (ausgeblendetT === false) {
-                document.getElementById('Engagement').className += 'MediumRechts';
+    function Engagement() {
+      if (ausgeblendetT === true) {
+        document.getElementById('Engagement').className += ' MRAEngagement';
 
-                ausgeblendetT = true; 
-            }
-        }
-		
-		function Praktikum() {
-            if (ausgeblendetT === true) {
-                document.getElementById('Praktikum').className += ' MRAPraktikum';
+        ausgeblendetT = false;
 
-                ausgeblendetT = false;
+      } else if (ausgeblendetT === false) {
+        document.getElementById('Engagement').className += 'MediumRechts';
 
-            } else if (ausgeblendetT === false) {
-                document.getElementById('Praktikum').className += 'MediumRechts';
+        ausgeblendetT = true;
+      }
+    }
 
-                ausgeblendetT = true; 
-            }
-        }
-		
-		function Japan() {
-            if (ausgeblendetT === true) {
-                document.getElementById('Japan').className += ' MRAJapan';
+    function Praktikum() {
+      if (ausgeblendetT === true) {
+        document.getElementById('Praktikum').className += ' MRAPraktikum';
 
-                ausgeblendetT = false;
+        ausgeblendetT = false;
 
-            } else if (ausgeblendetT === false) {
-                document.getElementById('Japan').className += 'MediumRechts';
+      } else if (ausgeblendetT === false) {
+        document.getElementById('Praktikum').className += 'MediumRechts';
 
-                ausgeblendetT = true; 
-            }
-        }
-    </script>
-    
-    <div id="Links">
-        <!-- Header -->
-        <div id="Header">
-            <h3>Max Mustermann</h3>
-            
-            <p><i class="material-icons">today</i>12. January 1992, <i class="material-icons">location_on</i>Musterstadt</p>
-        </div>
-        
-        <!-- Spaltenbeschreibung -->
-        <div id="BeschreibungLinks">
-            <h5>Schulischer & Beruflicher Werdegang</h5>
-            <p>Details zur Schule, Studium, Fortbildungen, Workshops und Tätigkeiten im Fachbereich »Muster-Fachbereich«. Kurz alles, was für einen Einblick in den beruflichen Werdegang von Bedeutung ist.</p>
-        </div>
-        
-        <div class="AbstandMedium"></div>
-		
-        <!-- Grundschule -->
-        <div class="MediumLinks Transparenz">
-            <div class="MediumLinksHeader">
-            <h4>Grundschule</h4>
-            <p class="Anmerkung"><i class="material-icons">today</i>1999 — 2003</p>
-            <hr>
-            <p>Muster Grundschule, <i class="material-icons">location_on</i>Musterstadt</p>
-            </div>
-        </div>
-        
-        <!-- Gymnasium -->
-        <div  onClick="Gymnasium()" class="MediumLinks" id="Gymnasium">
-            <div class="MediumLinksHeader">
-                <h4>Gymnasium</h4>
-                <p class="Anmerkung"><i class="material-icons">today</i>2003 — 2012</p>
-                <hr>
-                <p>Muster Gymnasium, <i class="material-icons">location_on</i>Musterstadt</p>
-            </div>
-            <div class="MediumLinksDetails">
-                <h6>Abschluss</h6>
-                <p>Allgemeine Hochschulreife: <strong>&#216;&nbsp;1.2</strong></p>
-            </div>
-        </div>
-		
-		<!-- Mappenkurs -->
-        <div class="KleinLinks Transparenz" id="Mappenkurs">
-            <div class="MediumLinksHeader">
-                <h4>Kurs #1</h4>
-				<p class="Anmerkung"><i class="material-icons">today</i>06. — 07.2013</p>
-            </div>
-            <div class="MediumLinksDetails">
-            </div>
-        </div>
-        
-        <!-- Hochschule -->
-        <div onClick="Hochschule()" class="MediumLinks" id="Hochschule">
-            <div class="MediumLinksHeader">
-                <h4>Hochschule</h4>
-                <p class="Anmerkung"><i class="material-icons">today</i>2013 — 2016</p>
-                <hr>
-                <p>Muster Hochschule, <i class="material-icons">location_on</i>Musterstadt</p>
-            </div>
-            <div class="MediumLinksDetails">
-                <h6>Verlauf</h6>
-                
-                <p>Im Rahmen des Studiums befasst sich micht mit vielen Teilbereichen des Fachbereichs »Muster-Fachbeareich«. Hauptsächlich fokusiert er auf den Teilbereich »Muster-Teilbereich«.</p>
-                <br>
-                <p>Neben dem »Muster-Teilbereich« widmet er noch der »Muster-Teilbereich« und der »Muster-Teilbereich« viel seiner Arbeits- und Freizeit.</p>
-                <br>
-                <p>Bachel of Art: <strong>&#216;&nbsp;1.0</strong></p>
-            </div>
-        </div>
-        
+        ausgeblendetT = true;
+      }
+    }
+
+    function Japan() {
+      if (ausgeblendetT === true) {
+        document.getElementById('Japan').className += ' MRAJapan';
+
+        ausgeblendetT = false;
+
+      } else if (ausgeblendetT === false) {
+        document.getElementById('Japan').className += 'MediumRechts';
+
+        ausgeblendetT = true;
+      }
+    }
+  </script>
+
+  <div id="Links">
+    <!-- Header -->
+    <div id="Header">
+      <h3>Max Mustermann</h3>
+
+      <p><i class="material-icons">today</i>12. Januar 1992, <i class="material-icons">location_on</i>Musterstadt</p>
+    </div>
+
+    <!-- Spaltenbeschreibung -->
+    <div id="BeschreibungLinks">
+      <h5>Schulischer & Beruflicher Werdegang</h5>
+      <p>Details zur Schule, Studium, Fortbildungen, Workshops und Tätigkeiten im Fachbereich »Muster-Fachbereich«. Kurz alles, was für einen Einblick in den beruflichen Werdegang von Bedeutung ist.</p>
+    </div>
+
+    <div class="AbstandMedium"></div>
+
+    <!-- Grundschule -->
+    <div class="MediumLinks Transparenz">
+      <div class="MediumLinksHeader">
+        <h4>Grundschule</h4>
+        <p class="Anmerkung"><i class="material-icons">today</i>1999 — 2003</p>
+        <hr>
+        <p>Muster Grundschule, <i class="material-icons">location_on</i>Musterstadt</p>
+      </div>
+    </div>
+
+    <!-- Gymnasium -->
+    <div onClick="Gymnasium()" class="MediumLinks" id="Gymnasium">
+      <div class="MediumLinksHeader">
+        <h4>Gymnasium</h4>
+        <p class="Anmerkung"><i class="material-icons">today</i>2003 — 2012</p>
+        <hr>
+        <p>Muster Gymnasium, <i class="material-icons">location_on</i>Musterstadt</p>
+      </div>
+      <div class="MediumLinksDetails">
+        <h6>Abschluss</h6>
+        <p>Allgemeine Hochschulreife: <strong>&#216;&nbsp;1.2</strong></p>
+      </div>
+    </div>
+
+    <!-- Mappenkurs -->
+    <div class="KleinLinks Transparenz" id="Mappenkurs">
+      <div class="MediumLinksHeader">
+        <h4>Kurs #1</h4>
+        <p class="Anmerkung"><i class="material-icons">today</i>06. — 07.2013</p>
+      </div>
+      <div class="MediumLinksDetails">
+      </div>
+    </div>
+
+    <!-- Hochschule -->
+    <div onClick="Hochschule()" class="MediumLinks" id="Hochschule">
+      <div class="MediumLinksHeader">
+        <h4>Hochschule</h4>
+        <p class="Anmerkung"><i class="material-icons">today</i>2013 — 2016</p>
+        <hr>
+        <p>Muster Hochschule, <i class="material-icons">location_on</i>Musterstadt</p>
+      </div>
+      <div class="MediumLinksDetails">
+        <h6>Verlauf</h6>
+
+        <p>Im Rahmen des Studiums befasst sich micht mit vielen Teilbereichen des Fachbereichs »Muster-Fachbeareich«. Hauptsächlich fokusiert er auf den Teilbereich »Muster-Teilbereich«.</p>
+        <br>
+        <p>Neben dem »Muster-Teilbereich« widmet er noch der »Muster-Teilbereich« und der »Muster-Teilbereich« viel seiner Arbeits- und Freizeit.</p>
+        <br>
+        <p>Bachel of Art: <strong>&#216;&nbsp;1.0</strong></p>
+      </div>
+    </div>
+
     <div id="Footer">
-        <p>© Copyright 2017 — Max Mustermann<br><span id="FooterLinks"><a href="http://andrewerthwein.de/Impressum.html"><i class="material-icons">subject</i>Impressum</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://andrewerthwein.de/Kontakt.html"><i class="material-icons">contacts</i>Kontakt</a></span></p>    
+      <p>© Copyright 2017 — Max Mustermann<br><span id="FooterLinks"><a href="http://andrewerthwein.de/Impressum.html"><i class="material-icons">subject</i>Impressum</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://andrewerthwein.de/Kontakt.html"><i class="material-icons">contacts</i>Kontakt</a></span></p>
     </div>
+  </div>
+
+  <div id="Rechts">
+    <!-- Spaltenbeschreibung -->
+    <div id="BeschreibungRechts">
+      <h5>Außerschulischer Werdegang</h5>
+      <p>Details zur Engagement und Arbeit außerhalb von Studium und Beruf mit Bezug auf den Fachbereich »Muster-Fachbereich«. Natürlich auch etwas Welterfahrung.</p>
     </div>
-    
-    <div id="Rechts">
-        <!-- Spaltenbeschreibung -->
-        <div id="BeschreibungRechts">
-            <h5>Außerschulischer Werdegang</h5>
-            <p>Details zur Engagement und Arbeit außerhalb von Studium und Beruf mit Bezug auf den Fachbereich »Muster-Fachbereich«. Natürlich auch etwas Welterfahrung.</p>
-        </div>
-        
-		<div class="KleinRechts Transparenz" id="Airbrush">
-            <div class="MediumRechtsHeader">
-                <h4>Workshop #1</h4>
-                <p class="Anmerkung"><i class="material-icons">today</i>Januar 2011</p>
-            </div>
-            <div class="MediumRechtsDetails">
-            </div>
-        </div>
-		
-        <div onClick="China()" class="MediumRechts Transparenz" id="China">
-            <div class="MediumRechtsHeader">
-                <h4>Auslandserfahrung #1</h4>
-                <p class="Anmerkung"><i class="material-icons">today</i>Juli 2012</p>
-                <hr>
-                <p><i class="material-icons">location_on</i>Musterstadt, <i class="material-icons">location_on</i>Musterstadt
+
+    <div class="KleinRechts Transparenz" id="Airbrush">
+      <div class="MediumRechtsHeader">
+        <h4>Workshop #1</h4>
+        <p class="Anmerkung"><i class="material-icons">today</i>Januar 2011</p>
+      </div>
+      <div class="MediumRechtsDetails">
+      </div>
+    </div>
+
+    <div onClick="China()" class="MediumRechts Transparenz" id="China">
+      <div class="MediumRechtsHeader">
+        <h4>Auslandserfahrung #1</h4>
+        <p class="Anmerkung"><i class="material-icons">today</i>Juli 2012</p>
+        <hr>
+        <p><i class="material-icons">location_on</i>Musterstadt, <i class="material-icons">location_on</i>Musterstadt
             </div>
             <div class="MediumRechtsDetails">
                 <h6>Studienreise</h6>
-                
+
                 <p>Im Rahmen der Studienreise in der Jahrgangstufe reisen wir nach »Musterland«, wo die »Musterstadt«, »Musterstadt«, »Musterstadt« und »Musterstadt« besucht wurde.</p>
-                <br>
-                <p>Während dieses Aufenthalts und der natürlich einmaligen Erfahrungen war es auch möglich in »Musterstadt« die Schule zu besuchen.</p>
-            </div>
-        </div>
-        
-        <div onClick="Thailand()" class="MediumRechts Transparenz" id="Thailand">
-            <div class="MediumRechtsHeader">
-                <h4>Auslandserfahrung #2</h4>
-                <p class="Anmerkung"><i class="material-icons">today</i>12.2012 — 06.2013</p>
-                <hr>
-				<p><i class="material-icons">location_on</i>Musterstadt</p>
-            </div>
-            <div class="MediumRechtsDetails">
-                <h6>Workcamp</h6>
-                
-                <p>Nach dem Abitur engagierte sich Max Mustermann über »Muster-Stiftung« in einem Workcamp in »Musterstadt«.</p>
-                <br>
-                <p>Während seines Aufenthalts war er an der »Muster-Workcamp« tätig und konnte dieses mit einem Kurztrip nach »Musterland« und »Musterland« kombinieren.</p>
-            </div>
-        </div>
-		
-		<div onClick="Engagement()" class="MediumRechts" id="Engagement">
-            <div class="MediumRechtsHeader">
-                <h4>Engagement</h4>
-                <p class="Anmerkung"><i class="material-icons">today</i><span class="italic">fortwährend</span></p>
-                <hr>
-				<p>Musterfakultät/Musterorganisation, <i class="material-icons">location_on</i>Musterstadt</p>
-            </div>
-            <div class="MediumRechtsDetails">
-                <h6>Engagement</h6>
-                
-                <p>Während seines Studiums engagierte sich Max Mustermann an seiner Fakultät, wie auch an seiner Hochschule:</p>
-                <br>
-                <ul>
-					<li>Muster-Engagement #1</li>
-					<li>Muster-Engagement #2</li>
-					<li>Muster-Engagement #3</li>
-					<li>Muster-Engagement #4</li>
-					<li>Muster-Engagement #5</li>
-					<li>Muster-Engagement #6</li>
-					<li>Muster-Engagement #7</li>
-				</ul>
-            </div>
-        </div>
-		
-		<div class="KleinRechts Transparenz" id="Airbrush">
-            <div class="MediumRechtsHeader">
-                <h4>Sprachkurs #1</h4>
-                <p class="Anmerkung"><i class="material-icons">location_on</i>Muster-Institution</p>
-            </div>
-            <div class="MediumRechtsDetails">
-            </div>
-        </div>
-		
-		<div class="KleinRechts Transparenz" id="Airbrush">
-            <div class="MediumRechtsHeader">
-                <h4>Sprachkurzs #2</h4>
-                <p class="Anmerkung"><i class="material-icons">location_on</i>Muster-Institution</p>
-            </div>
-            <div class="MediumRechtsDetails">
-            </div>
-        </div>
-		
-		<div class="KleinRechts" id="Airbrush">
-            <div class="MediumRechtsHeader">
-                <h4>Kurs #2</h4>
-                <p class="Anmerkung"><i class="material-icons">location_on</i>Muster-Institution</p>
-            </div>
-            <div class="MediumRechtsDetails">
-            </div>
-        </div>
-		
-		<div onClick="Praktikum()" class="MediumRechts" id="Praktikum">
-            <div class="MediumRechtsHeader">
-                <h4>Praktisches Semester</h4>
-                <p class="Anmerkung"><i class="material-icons">today</i>02. — 07.2015</p>
-                <hr>
-				<p>Muster GmbH<i class="material-icons">location_on</i>Musterstadt</p>
-            </div>
-            <div class="MediumRechtsDetails">
-                <h6>Praktikum</h6>
-                
-				<p>Vertiefende Fokussierung auf »Muster-Fachbereich(e)«.</p>
-            </div>
-        </div>
-		
-		<div class="KleinRechts" id="Airbrush">
-            <div class="MediumRechtsHeader">
-                <h4>Muster-Stipendium</h4>
-                <p class="Anmerkung"><i class="material-icons">location_on</i>Muster-Stiftung</p>
-            </div>
-            <div class="MediumRechtsDetails">
-            </div>
-        </div>
-		
-		<div class="KleinRechts Transparenz" id="Airbrush">
-            <div class="MediumRechtsHeader">
-                <h4>Sprachkurs #3</h4>
-                <p class="Anmerkung"><i class="material-icons">location_on</i>Muster-Institution</p>
-            </div>
-            <div class="MediumRechtsDetails">
-            </div>
-        </div>
-		
-		<div class="MediumRechts" id="Werkstudent">
-            <div class="MediumRechtsHeader">
-                <h4>Werkstudent</h4>
-                <p class="Anmerkung"><i class="material-icons">today</i>08.2015 — 12.2015</p>
-                <hr>
-				<p>Muster GmbH<i class="material-icons">location_on</i>Musterstadt</p>
-            </div>
-            <div class="MediumRechtsDetails">
-            </div>
-        </div>
-		
-		<div onClick="Japan()" class="MediumRechts" id="Japan">
-            <div class="MediumRechtsHeader">
-                <h4>Auslandserfahrung #3</h4>
-                <p class="Anmerkung"><i class="material-icons">today</i>01. — 06.2016</p>
-                <hr>
-				<p>Muster-Gast-Universtität <i class="material-icons">location_on</i>Musterstadt</p>
-            </div>
-            <div class="MediumRechtsDetails">
-            </div>
-        </div>
-    
+        <br>
+        <p>Während dieses Aufenthalts und der natürlich einmaligen Erfahrungen war es auch möglich in »Musterstadt« die Schule zu besuchen.</p>
+      </div>
     </div>
-    
-    </body>
+
+    <div onClick="Thailand()" class="MediumRechts Transparenz" id="Thailand">
+      <div class="MediumRechtsHeader">
+        <h4>Auslandserfahrung #2</h4>
+        <p class="Anmerkung"><i class="material-icons">today</i>12.2012 — 06.2013</p>
+        <hr>
+        <p><i class="material-icons">location_on</i>Musterstadt</p>
+      </div>
+      <div class="MediumRechtsDetails">
+        <h6>Workcamp</h6>
+
+        <p>Nach dem Abitur engagierte sich Max Mustermann über »Muster-Stiftung« in einem Workcamp in »Musterstadt«.</p>
+        <br>
+        <p>Während seines Aufenthalts war er an der »Muster-Workcamp« tätig und konnte dieses mit einem Kurztrip nach »Musterland« und »Musterland« kombinieren.</p>
+      </div>
+    </div>
+
+    <div onClick="Engagement()" class="MediumRechts" id="Engagement">
+      <div class="MediumRechtsHeader">
+        <h4>Engagement</h4>
+        <p class="Anmerkung"><i class="material-icons">today</i><span class="italic">fortwährend</span></p>
+        <hr>
+        <p>Musterfakultät/Musterorganisation, <i class="material-icons">location_on</i>Musterstadt</p>
+      </div>
+      <div class="MediumRechtsDetails">
+        <h6>Engagement</h6>
+
+        <p>Während seines Studiums engagierte sich Max Mustermann an seiner Fakultät, wie auch an seiner Hochschule:</p>
+        <br>
+        <ul>
+          <li>Muster-Engagement #1</li>
+          <li>Muster-Engagement #2</li>
+          <li>Muster-Engagement #3</li>
+          <li>Muster-Engagement #4</li>
+          <li>Muster-Engagement #5</li>
+          <li>Muster-Engagement #6</li>
+          <li>Muster-Engagement #7</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="KleinRechts Transparenz" id="Airbrush">
+      <div class="MediumRechtsHeader">
+        <h4>Sprachkurs #1</h4>
+        <p class="Anmerkung"><i class="material-icons">location_on</i>Muster-Institution</p>
+      </div>
+      <div class="MediumRechtsDetails">
+      </div>
+    </div>
+
+    <div class="KleinRechts Transparenz" id="Airbrush">
+      <div class="MediumRechtsHeader">
+        <h4>Sprachkurzs #2</h4>
+        <p class="Anmerkung"><i class="material-icons">location_on</i>Muster-Institution</p>
+      </div>
+      <div class="MediumRechtsDetails">
+      </div>
+    </div>
+
+    <div class="KleinRechts" id="Airbrush">
+      <div class="MediumRechtsHeader">
+        <h4>Kurs #2</h4>
+        <p class="Anmerkung"><i class="material-icons">location_on</i>Muster-Institution</p>
+      </div>
+      <div class="MediumRechtsDetails">
+      </div>
+    </div>
+
+    <div onClick="Praktikum()" class="MediumRechts" id="Praktikum">
+      <div class="MediumRechtsHeader">
+        <h4>Praktisches Semester</h4>
+        <p class="Anmerkung"><i class="material-icons">today</i>02. — 07.2015</p>
+        <hr>
+        <p>Muster GmbH<i class="material-icons">location_on</i>Musterstadt</p>
+      </div>
+      <div class="MediumRechtsDetails">
+        <h6>Praktikum</h6>
+
+        <p>Vertiefende Fokussierung auf »Muster-Fachbereich(e)«.</p>
+      </div>
+    </div>
+
+    <div class="KleinRechts" id="Airbrush">
+      <div class="MediumRechtsHeader">
+        <h4>Muster-Stipendium</h4>
+        <p class="Anmerkung"><i class="material-icons">location_on</i>Muster-Stiftung</p>
+      </div>
+      <div class="MediumRechtsDetails">
+      </div>
+    </div>
+
+    <div class="KleinRechts Transparenz" id="Airbrush">
+      <div class="MediumRechtsHeader">
+        <h4>Sprachkurs #3</h4>
+        <p class="Anmerkung"><i class="material-icons">location_on</i>Muster-Institution</p>
+      </div>
+      <div class="MediumRechtsDetails">
+      </div>
+    </div>
+
+    <div class="MediumRechts" id="Werkstudent">
+      <div class="MediumRechtsHeader">
+        <h4>Werkstudent</h4>
+        <p class="Anmerkung"><i class="material-icons">today</i>08.2015 — 12.2015</p>
+        <hr>
+        <p>Muster GmbH<i class="material-icons">location_on</i>Musterstadt</p>
+      </div>
+      <div class="MediumRechtsDetails">
+      </div>
+    </div>
+
+    <div onClick="Japan()" class="MediumRechts" id="Japan">
+      <div class="MediumRechtsHeader">
+        <h4>Auslandserfahrung #3</h4>
+        <p class="Anmerkung"><i class="material-icons">today</i>01. — 06.2016</p>
+        <hr>
+        <p>Muster-Gast-Universtität <i class="material-icons">location_on</i>Musterstadt</p>
+      </div>
+      <div class="MediumRechtsDetails">
+      </div>
+    </div>
+
+  </div>
+
+</body>
+
 </html>
