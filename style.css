@@ -1,0 +1,235 @@
+html {font-size: 1em;
+      font-family: 'Encode Sans Condensed', Arial, sans-serif;
+      font-weight: 300;
+      color: lightgray; }
+
+body {width: 800px;
+      margin-left: auto;
+      margin-right: auto; }
+
+p, li, td {font-size: 90%; 
+           line-height: 1.4; }
+
+strong {font-weight: 700; }
+p .material-icons {font-size: 1.2em;
+                   vertical-align: middle;
+                   margin-right: 4px; }
+
+h1, h2, h3, h4, h5, h6 {font-weight: 700; }
+
+h1 {font-size: 1.8em; }
+
+h2 {font-size: 1.6em; }
+
+h3 {font-size: 1.4em; }
+
+h4 {font-size: 1.3em; }
+
+h5 {font-size: 1.2em; }
+
+h6 {font-size: 1.1em; }
+
+a {text-decoration: none;
+   color: gray;
+   transition: all 2s ease; }
+
+a:hover {text-decoration: underline; }
+
+.italic {font-style: italic; }
+/* Weiße Text-Markierung */
+#Links ::selection {color: lightcoral; }
+
+#Rechts ::selection {color: turquoise; }
+
+#Links ::-moz-selection {color: lightcoral; }
+
+#Rechts ::-moz-selection {color: turquoise; }
+
+/* Unterbindung der Button-Markierung */
+a, .LinkText, .MediumLinksHeader,  .MediumRechtsHeader, img {-webkit-touch-callout: none;
+                                                           -webkit-user-select: none;
+                                                           -khtml-user-select: none;
+                                                           -moz-user-select: none;
+                                                           -ms-user-select: none;
+                                                           user-select: none; }
+hr {border: none;
+    width: 80%;
+    height: 2px;
+    background-color: white;
+    margin-right: 20%; }
+
+.Anmerkung {font-size: 80%; 
+            color: rgba(255,255,255, 0.6);
+            margin-top: 2px;
+            margin-bottom: -4px; }
+
+.AbstandMedium {height: 40px; }
+
+#Links, #Rechts {width: 50%;
+                 height: 100%; 
+                 display: inline-block; 
+                 color: gray;
+                 overflow: auto; }
+
+#Links ul, #Rechts ul {list-style-type: disc!important;
+					  list-style-position: inside; }
+#Links {position: fixed;
+        top: 0px;
+        left: 0px; 
+        box-shadow: 6px 0px 25px rgba(0, 0, 0, 0.2);
+        z-index: 9;
+        background-color: #505050;
+        direction: rtl; }
+
+#Rechts {position: fixed;
+         top: 0px;
+         left: 50%; 
+         height: 100%; 
+         background-color: #505050; 
+         z-index: -9; }
+
+#Header {margin-left: 20%;
+         margin-right: 5%;
+         margin-top: 30px;
+         transition: all 2s ease;
+         padding-bottom: 10px; 
+         border-bottom: 2px gray solid;
+         direction: ltr; }
+
+#Header:hover {color: lightgray;
+               border-bottom: 2px lightgray solid; }
+
+#Header h3  {margin-bottom: 6px; }
+
+#BeschreibungLinks {margin-left: 20%;
+                     margin-right: 5%;
+                     margin-top: 40px;
+                     direction: ltr; }
+
+#BeschreibungLinks h5 {margin-bottom: 6px; }
+
+#BeschreibungRechts {margin-right: 20%;
+                     margin-left: 5%;
+                     margin-top: 130px;
+					 margin-bottom: 205px;}
+
+#BeschreibungRechts h5 {margin-bottom: 6px; }
+
+#Footer {margin-bottom: 30px;
+         margin-left: 20%;
+         margin-right: 5%; 
+         margin-right: 5%; 
+         transition: all 2s ease;
+         direction: ltr; }
+
+#Footer:hover, #Footer:hover a {color: lightgray; }
+
+#FooterLinks {margin-left: 13px; }
+
+.MediumLinks, .MediumRechts {width: 60%; }
+
+.KleinLinks, .KleinRechts {width: 40%; }
+
+.KleinLinks {margin-left: auto;
+             background-color: white;
+             border-radius: 0px 25px;
+             padding-bottom: 15px;
+             height: 50px;
+             overflow: hidden; 
+             margin-bottom: 20px;
+             box-shadow: -5px 5px 20px rgba(0, 0, 0, 0.2);
+             transition: all 0.6s ease-in !important;
+             direction: ltr; }
+
+.MediumLinks {margin-left: auto;
+              background-color: white;
+              border-radius: 0px 25px;
+              padding-bottom: 15px;
+              height: 89px;
+              overflow: hidden; 
+              margin-bottom: 20px;
+              box-shadow: -5px 5px 20px rgba(0, 0, 0, 0.2);
+              transition: all 0.6s ease-in !important;
+              direction: ltr; }
+
+.KleinRechts {margin-left: right;
+               background-color: white;
+               border-radius: 25px 0px;
+               padding-bottom: 15px;
+               height: 50px;
+               overflow: hidden; 
+               margin-bottom: 20px;
+               box-shadow: -5px 5px 20px rgba(0, 0, 0, 0.2);
+               transition: all 0.6s ease-in;
+			   margin-right: auto; }
+
+.MediumRechts {margin-left: right;
+               background-color: white;
+               border-radius: 25px 0px;
+               padding-bottom: 15px;
+               height: 89px;
+               overflow: hidden; 
+               margin-bottom: 20px;
+               box-shadow: -5px 5px 20px rgba(0, 0, 0, 0.2);
+               transition: all 0.6s ease-in;
+			   margin-right: auto; }
+
+.MLAGymnasium {height: auto;
+			   transition: all 0.6s ease-in !important; }
+
+.MLAHochschule {height: auto;
+			    transition: all 0.6s ease-in !important;  }
+
+.MRAChina {height: auto;
+		   transition: all 0.6s ease-in !important;  }
+
+.MRAThailand {height: auto;
+			  transition: all 0.6s ease-in !important;  }
+
+.MRAEngagement {height: auto;
+			    transition: all 0.6s ease-in !important;  }
+
+.MRAPraktikum {height: auto;
+			    transition: all 0.6s ease-in !important;  }
+
+.MRAJapan {height: auto;
+		   transition: all 0.6s ease-in !important;  }
+
+.Transparenz {opacity: 0.5; }
+
+.Transparenz:hover {opacity: 1; }
+
+.MediumLinksHeader {padding: 15px 25px;
+                   color: white; 
+                   background-color: lightcoral; 
+                   border-radius: 0px 25px;
+                   z-index: 999 !important; }
+
+.MediumRechtsHeader {padding: 15px 25px;
+                    color: white; 
+                    background-color: turquoise; 
+                    border-radius: 25px 0px;
+                    z-index: 999 !important; }
+ 
+#Gymnasium:hover, #Hochschule:hover {cursor: pointer; }
+
+.MediumLinksDetails {margin-left: 25px;
+                    margin-top: 15px;
+                    margin-right: 25px; 
+                    color: black;
+					transition: all 0.6s ease-in !important; }
+
+.MediumRechtsDetails {margin-left: 25px;
+                      margin-top: 15px;
+                      margin-right: 25px; 
+                      color: black;
+					  transition: all 0.6s ease-in !important; }
+
+.MediumLinksDetails h6 {margin-bottom: 5px; }
+
+.MediumRechtsDetails h6 {margin-bottom: 5px; }
+
+#Gymnasium {margin-bottom: 250px; }
+
+#Engagement {margin-top: 85px; }
+
