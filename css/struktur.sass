@@ -1,256 +1,67 @@
 @import variablen.sass
 
-.AbstandMedium
-  height: 40px
+html, body
+  background-color: $farbe-hintergrund-1
 
-#Links, #Rechts
-  width: 50%
-  height: 100%
-  display: inline-block
-  color: $basis-farbe-5
-  overflow: auto
+body
+  width: 100vw
+  overflow-x: hidden
 
-#Links ul, #Rechts ul
-  list-style-type: disc !important
-  list-style-position: inside
+body > section
+  width: 50vw
+  height: 100vh
+  overflow-x: hidden
+  overflow-y: auto
 
-#Links
+body > section:first-child
   position: fixed
   top: 0px
   left: 0px
-  box-shadow: 6px 0px 25px $schlagschatten-farbe-1
-  z-index: 9
-  background-color: $basis-farbe-6
+  box-shadow: 0px 0px 10px $farbe-schlagschatten-1
+  z-index: 1
   direction: rtl
 
-#Rechts
+body > section:last-child
   position: fixed
   top: 0px
-  left: 50%
+  left: 50vw
+  z-index: -1
+
+// Meilensteine
+.Klein
+  width: 150px
+  height: 80px
+
+.Klein > header
+  width: 100%
   height: 100%
-  background-color: $basis-farbe-6
-  z-index: -9
+  padding: 10px
 
-#Header
-  margin-left: 20%
-  margin-right: 5%
-  margin-top: 30px
-  padding-bottom: 10px
-  border-bottom: 2px $basis-farbe-5 solid
-  direction: ltr
-  -webkit-transition: all 0.4s ease-in
-  -moz-transition: all 0.4s ease-in
-  -o-transition: all 0.4s ease-in
-  transition: all 0.4s ease-in
+.Mittel
+  width: 250px
+  height: 80px
 
-#Header:hover, #Header:focus, #Header:active
-  color: $basis-farbe-4
-  border-bottom: 2px $basis-farbe-4 solid
+.Mittel > header
+  width: 100%
+  height: 100%
+  padding: 10px
 
-#Header h3
-  margin-bottom: 6px
+.Gross
+  width: 350px
+  height: 80px
 
-#BeschreibungLinks
-  margin-left: 20%
-  margin-right: 5%
-  margin-top: 40px
-  direction: ltr
+.Gross > header
+  width: 100%
+  height: 100%
+  padding: 10px
 
-#BeschreibungLinks h5
-  margin-bottom: 6px
+body > section:first-child
+  .Klein, .Mittel, .Gross
+    direction: ltr
+    border-radius: 0px 25px 0px 25px
+    overflow: hidden
 
-#BeschreibungRechts
-  margin-right: 20%
-  margin-left: 5%
-  margin-top: 130px
-  margin-bottom: 205px
-
-#BeschreibungRechts h5
-  margin-bottom: 6px
-
-#Footer
-  margin-bottom: 30px
-  margin-left: 20%
-  margin-right: 5%
-  margin-right: 5%
-  direction: ltr
-  -webkit-transition: all 0.4s ease-in
-  -moz-transition: all 0.4s ease-in
-  -o-transition: all 0.4s ease-in
-  transition: all 0.4s ease-in
-
-#Footer:hover, #Footer:focus, #Footer:active, #Footer:hover a, #Footer:focus a, #Footer:active a
-  color: $basis-farbe-4
-
-#FooterLinks
-  margin-left: 13px
-
-.MediumLinks, .MediumRechts
-  width: 60%
-
-.KleinLinks, .KleinRechts
-  width: 40%
-
-.KleinLinks
-  margin-left: auto
-  background-color: $basis-farbe-3
-  border-radius: 0px 25px
-  padding-bottom: 15px
-  height: 50px
-  overflow: hidden
-  margin-bottom: 20px
-  box-shadow: -5px 5px 20px $schlagschatten-farbe-1
-  direction: ltr
-  -webkit-transition: all 0.4s ease-in
-  -moz-transition: all 0.4s ease-in
-  -o-transition: all 0.4s ease-in
-  transition: all 0.4s ease-in
-
-.MediumLinks
-  margin-left: auto
-  background-color: $basis-farbe-3
-  border-radius: 0px 25px
-  padding-bottom: 15px
-  height: 89px
-  overflow: hidden
-  margin-bottom: 20px
-  box-shadow: -5px 5px 20px $schlagschatten-farbe-1
-  direction: ltr
-  -webkit-transition: all 0.4s ease-in
-  -moz-transition: all 0.4s ease-in
-  -o-transition: all 0.4s ease-in
-  transition: all 0.4s ease-in
-
-.KleinRechts
-  margin-left: right
-  background-color: $basis-farbe-3
-  border-radius: 25px 0px
-  padding-bottom: 15px
-  height: 50px
-  overflow: hidden
-  margin-bottom: 20px
-  box-shadow: -5px 5px 20px $schlagschatten-farbe-1
-  margin-right: auto
-  -webkit-transition: all 0.4s ease-in
-  -moz-transition: all 0.4s ease-in
-  -o-transition: all 0.4s ease-in
-  transition: all 0.4s ease-in
-
-.MediumRechts
-  margin-left: right
-  background-color: $basis-farbe-3
-  border-radius: 25px 0px
-  padding-bottom: 15px
-  height: 89px
-  overflow: hidden
-  margin-bottom: 20px
-  box-shadow: -5px 5px 20px $schlagschatten-farbe-1
-  margin-right: auto
-  -webkit-transition: all 0.4s ease-in
-  -moz-transition: all 0.4s ease-in
-  -o-transition: all 0.4s ease-in
-  transition: all 0.4s ease-in
-
-.MLAGymnasium
-  height: auto
-  -webkit-transition: all 0.4s ease-in
-  -moz-transition: all 0.4s ease-in
-  -o-transition: all 0.4s ease-in
-  transition: all 0.4s ease-in
-
-.MLAHochschule
-  height: auto
-  -webkit-transition: all 0.4s ease-in
-  -moz-transition: all 0.4s ease-in
-  -o-transition: all 0.4s ease-in
-  transition: all 0.4s ease-in
-
-.MRAChina
-  height: auto
-  -webkit-transition: all 0.4s ease-in
-  -moz-transition: all 0.4s ease-in
-  -o-transition: all 0.4s ease-in
-  transition: all 0.4s ease-in
-
-.MRAThailand
-  height: auto
-  -webkit-transition: all 0.4s ease-in
-  -moz-transition: all 0.4s ease-in
-  -o-transition: all 0.4s ease-in
-  transition: all 0.4s ease-in
-
-.MRAEngagement
-  height: auto
-  -webkit-transition: all 0.4s ease-in
-  -moz-transition: all 0.4s ease-in
-  -o-transition: all 0.4s ease-in
-  transition: all 0.4s ease-in
-
-.MRAPraktikum
-  height: auto
-  -webkit-transition: all 0.4s ease-in
-  -moz-transition: all 0.4s ease-in
-  -o-transition: all 0.4s ease-in
-  transition: all 0.4s ease-in
-
-.MRAJapan
-  height: auto
-  -webkit-transition: all 0.4s ease-in
-  -moz-transition: all 0.4s ease-in
-  -o-transition: all 0.4s ease-in
-  transition: all 0.4s ease-in
-
-.Transparenz
-  opacity: 0.5
-
-.Transparenz:hover, .Transparenz:focus, .Transparenz:active
-  opacity: 1
-
-.MediumLinksHeader
-  padding: 15px 25px
-  color: $basis-farbe-3
-  background-color: $basis-farbe-1
-  border-radius: 0px 25px
-  z-index: 999 !important
-
-.MediumRechtsHeader
-  padding: 15px 25px
-  color: $basis-farbe-3
-  background-color: $basis-farbe-2
-  border-radius: 25px 0px
-  z-index: 999 !important
-
-#Gymnasium:hover, #Hochschule:hover
-  cursor: pointer
-
-.MediumLinksDetails
-  margin-left: 25px
-  margin-top: 15px
-  margin-right: 25px
-  color: $basis-farbe-7
-  -webkit-transition: all 0.4s ease-in
-  -moz-transition: all 0.4s ease-in
-  -o-transition: all 0.4s ease-in
-  transition: all 0.4s ease-in
-
-.MediumRechtsDetails
-  margin-left: 25px
-  margin-top: 15px
-  margin-right: 25px
-  color: $basis-farbe-7
-  -webkit-transition: all 0.4s ease-in
-  -moz-transition: all 0.4s ease-in
-  -o-transition: all 0.4s ease-in
-  transition: all 0.4s ease-in
-
-.MediumLinksDetails h6
-  margin-bottom: 5px
-
-.MediumRechtsDetails h6
-  margin-bottom: 5px
-
-#Gymnasium
-  margin-bottom: 250px
-
-#Engagement
-  margin-top: 85px
+body > section:last-child
+  .Klein, .Mittel, .Gross
+    border-radius: 25px 0px 25px 0px
+    overflow: hidden
